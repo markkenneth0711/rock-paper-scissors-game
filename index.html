@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>rock paper scissors</title>
+</head>
+<body>
+    <!--
+    “Bro, even rocks, papers, and scissors got more hustle than you right now. 
+    Finish the damn code before the scissors cut your excuses, 
+    the rock crushes your willpower, 
+    and the paper writes your failure.” 💀
+    - ChatGPT
+    -->
+
+    <div class="container">
+        <h1>rock paper scissors </h1>
+        
+        <div class="score-board">
+            <div class="score">
+                <div class="score-label">You</div>
+                <div class="score-value" id="playerScore">0</div>
+            </div>
+            <div class="score">
+                <div class="score-label">Clanker</div>
+                <div class="score-value" id="clankerScore">0</div>
+            </div>
+        </div>
+        
+        <div class="choices">
+            <button id="rock" onclick="userChoice('rock')" class="choice" title="Rock">🪨</button>
+            <button id="paper" onclick="userChoice('paper')" class="choice" title="Paper">📄</button>
+            <button id="scissors" onclick="userChoice('scissors')" class="choice" title="Scissors">✂️</button>
+        </div>
+
+        <div class="result-area" id="resultArea">
+            <div class="instruction">Choose your move</div>
+        </div>
+
+        <button class="reset-btn" onclick="location.reload()">Reset</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
